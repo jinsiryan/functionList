@@ -1,5 +1,7 @@
 package com.functionlist;
 
+import android.content.Context;
+
 /**
  * Created by imo on 2016/9/25.
  */
@@ -27,4 +29,5 @@ public class FunctionItem {
     public void setId(String id) {
         this.id = id;
     }
+
 }
