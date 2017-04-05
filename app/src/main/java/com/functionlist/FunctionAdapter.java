@@ -12,6 +12,7 @@ import com.functionlist.animation360.AnimationActivity;
 import com.functionlist.audiochat.AudioChatActivity;
 import com.functionlist.camera.CameraActivity;
 import com.functionlist.camera.CustomCameraActivity;
+import com.functionlist.drawable.DrawableActivity;
 import com.functionlist.droidserver.ServerActivity;
 import com.functionlist.shake.ShakeActivity;
 
@@ -86,6 +87,9 @@ public class FunctionAdapter extends RecyclerView.Adapter{
                     break;
                 case "wechatclipping":
                     intent = new Intent(context, WechatClippingActivity.class);
+                    break;
+                case "drawable":
+                    intent = new Intent(context, DrawableActivity.class);
                     break;
             }
             context.startActivity(intent);

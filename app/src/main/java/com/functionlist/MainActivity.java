@@ -31,5 +31,6 @@ public class MainActivity extends AppCompatActivity {
         functionItems.add(new FunctionItem("camera","摄像头拍照"));
         functionItems.add(new FunctionItem("floatview","悬浮球"));
         functionItems.add(new FunctionItem("wechatclipping","微信聊天图片显示风格"));
+        functionItems.add(new FunctionItem("drawable","drawable应用"));
     }
 }
