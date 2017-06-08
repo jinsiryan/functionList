@@ -3,6 +3,7 @@ package com.functionlist.WeChatImage;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
+import android.graphics.Color;
 import android.graphics.NinePatch;
 import android.graphics.Paint;
 import android.graphics.PorterDuff;
@@ -18,11 +19,15 @@ public class WechatClippingActivity extends AppCompatActivity {
 
 
     private ImageView iv_image;
+    private ClipImageView iv_clip_image;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_wechat_clipping);
         iv_image = (ImageView) findViewById(R.id.iv_image);
+        iv_clip_image = (ClipImageView) findViewById(R.id.iv_clip_image);
+        iv_clip_image.setModifiColor(Color.parseColor("#FFF6F6F6"));
+        iv_clip_image.setClipbg(R.drawable.chat_adapter_to_bg);
         showImage();
 
     }
