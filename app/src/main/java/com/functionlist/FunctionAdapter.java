@@ -91,6 +91,9 @@ public class FunctionAdapter extends RecyclerView.Adapter{
                 case "drawable":
                     intent = new Intent(context, DrawableActivity.class);
                     break;
+                case "liveApp":
+                    intent = new Intent(context, DrawableActivity.class);
+                    break;
             }
             context.startActivity(intent);
         }
