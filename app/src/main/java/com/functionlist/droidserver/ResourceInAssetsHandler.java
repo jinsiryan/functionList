@@ -9,7 +9,7 @@ import java.io.PrintStream;
 import java.io.PrintWriter;
 
 /**
- * Created by imo on 2016/9/29.
+ * Created by yan on 2016/9/29.
  */
 
 public class ResourceInAssetsHandler implements IResourceUriHandler{

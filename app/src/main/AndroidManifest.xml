@@ -8,7 +8,8 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
-
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <application
         android:name=".FunctionApplication"
         android:allowBackup="true"
@@ -48,8 +49,16 @@
         <activity android:name=".WeChatImage.WechatClippingActivity" />
         <activity android:name=".drawable.DrawableActivity" />
         <activity android:name=".httpUpload.HttpUploadActivity" />
-        <activity android:name=".programLiveApp.LiveActivity" />
+        <activity android:name=".programLiveApp.LiveActivity"
+            android:screenOrientation="landscape"
+            />
         <activity android:name=".programLiveApp.LiveListActivity"></activity>
+        <activity
+            android:name="io.vov.vitamio.activity.InitActivity"
+            android:configChanges="orientation|screenSize|smallestScreenSize|keyboard|keyboardHidden|navigation"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
     </application>
 
 </manifest>

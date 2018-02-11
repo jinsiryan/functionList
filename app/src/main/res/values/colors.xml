@@ -3,4 +3,9 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+    <!-- loading动画时，页面的背景色值-->
+    <color name="rl_loading_bg">#de262a3b</color>
+    <!-- 播放页panel背景色 -->
+    <color name="player_panel_bg">#dd000000</color>
 </resources>

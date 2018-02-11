@@ -14,6 +14,7 @@ import com.functionlist.camera.CameraActivity;
 import com.functionlist.camera.CustomCameraActivity;
 import com.functionlist.drawable.DrawableActivity;
 import com.functionlist.droidserver.ServerActivity;
+import com.functionlist.programLiveApp.LiveListActivity;
 import com.functionlist.shake.ShakeActivity;
 
 import java.util.ArrayList;
@@ -34,6 +35,7 @@ public class FunctionAdapter extends RecyclerView.Adapter{
             functionItems = items;
         }
     }
+
 
     class ViewHolder extends RecyclerView.ViewHolder{
         private Button btView;
@@ -92,7 +94,7 @@ public class FunctionAdapter extends RecyclerView.Adapter{
                     intent = new Intent(context, DrawableActivity.class);
                     break;
                 case "liveApp":
-                    intent = new Intent(context, DrawableActivity.class);
+                    intent = new Intent(context, LiveListActivity.class);
                     break;
             }
             context.startActivity(intent);
