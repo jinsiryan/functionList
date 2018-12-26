@@ -26,6 +26,7 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     api project(":vitamio")
+    api files('libs/LogDecryption')
 
     compile 'com.android.support:recyclerview-v7:24.2.1'
     compile 'com.android.support:design:25.0.0'

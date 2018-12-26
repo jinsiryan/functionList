@@ -17,10 +17,10 @@ public class AnimationActivity extends AppCompatActivity {
         setContentView(R.layout.activity_animation);
     }
     public void startService(View view){
-//        Intent intent = new Intent(this, MyService.class);
-//        startService(intent);
-//        finish();
-        FloatViewManager manager = FloatViewManager.getInstance(this);
-        manager.showFloatCircleView();
+        Intent intent = new Intent(this, MyService.class);
+        startService(intent);
+        finish();
+//        FloatViewManager manager = FloatViewManager.getInstance(this);
+//        manager.showFloatCircleView();
     }
 }
